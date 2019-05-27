@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #004e49, #106858, #2d8362, #4f9e68, #76b86b);
+    text-align: center;
+    background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+
+}
+
+#skills{
+    display: none;
+}
+
+.navbar {
+    background-color: #333;
+    padding-left: 800px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .btn-outline-dark{
+      background: #333 !important;
+      border-color: white !important;
+      font-family: 'Didact Gothic', sans-serif;
+  }
+
+  .btn{
+      color: rgb(138, 216, 190);
+  }
+
+  .text{
+    font-family: 'Francois One', sans-serif;
+    font-size: 40px;
+    margin-top: 2rem;
+    color: white;
+  }
+
+  .name{
+      background: #333;
+      margin: 2rem;
+      width: 300px;
+      margin-left: 495px;
+      font-family: 'Francois One', sans-serif;
+      color: white;
+      height: 70px;
+      font-size: 20px;
+      border-radius: 20px;
+
+  }
+
+  .description{
+      background: #333;
+      margin-top: 1rem;
+      font-family: 'Didact Gothic', sans-serif;
+      color: white;
+      font-size: 18px;
+      border-radius: 20px;
+      height: 100px;
+      width: 1000px;
+      margin-left: 140px;
+
+  }
+  .content-all{
+    width: 110px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 10rem;
+
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 20s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    /* overflow: hidden; */
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(45deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(90deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(135deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(180deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(225deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(270deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(315deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(315deg);
+    }
+}
