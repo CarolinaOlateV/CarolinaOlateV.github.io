@@ -37,18 +37,37 @@ body{
     margin-top: 2rem;
     color: white;
   }
+  li,h2{
+    font-family: 'Francois One', sans-serif;
+    color: #fff;
 
-  .name{
-      background: #333;
-      margin-top: 2rem;
-      width: 300px;
-      font-family: 'Francois One', sans-serif;
-      color: white;
-      height: 70px;
-      font-size: 20px;
-      border-radius: 20px;
-      margin: 0% auto;
-      margin-top: 3rem;
+  }
+  h2{
+    margin-top: 4rem;
+  }
+
+  .contenedor {
+	
+    display: flex;
+    width: 350px;
+    height: 50px;
+    font-size: 30px;
+    margin: auto;
+    overflow: hidden;   
+    margin-top: 3rem;
+  }
+  
+  ul {
+    animation: cambiar 7s infinite;
+  }
+  
+  @keyframes cambiar {
+    
+    0%{ margin-top: 0;}
+    20%{ margin-top: 0;}
+    
+    25% {margin-top: -40px;}
+    50% {margin-top: -40px;}
   }
 
   .description{
@@ -69,7 +88,7 @@ body{
     margin: auto;
     perspective: 800px;
     position: relative;
-    margin-top: 13rem;
+    margin-top: 9rem;
 
 }
 
@@ -211,7 +230,7 @@ body{
 
 header img {
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 15px auto;
   display: block;
   width: 220px;
   height: 220px;
@@ -491,7 +510,6 @@ header {
   transform-style: preserve-3d;
   border-radius: 10px;
   border: 1px solid #fff;
-  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
   opacity: 0;
   transition: all .3s ease;
   transition-delay: 1s;
@@ -499,12 +517,12 @@ header {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #58d;
+  background-color: rgba(3, 116, 97, 0.801);
   cursor: pointer;
   background-blend-mode: color-burn;
 }
 .left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover{
-  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  box-shadow: 0 0 30px 10px rgba(186, 186, 255, 0.6);
   background-color: #ccf;
 }
 .text{
@@ -517,7 +535,7 @@ header {
   will-change: transform;
   color: #fff;
   font-size: 23px;
-  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+  text-shadow: 0 0 5px rgba(84, 228, 108, 0.856);
 }
 .lefter{
   transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
