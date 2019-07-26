@@ -6,14 +6,21 @@
 body{
     background-image: linear-gradient(to bottom, #004e49, #106858, #2d8362, #4f9e68, #76b86b);
     text-align: center;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;   
 
 }
 
 
 #skills,#projects,#contact{
     display: none;
+}
+.perfil{
+  border-radius: 40px;
+  margin-top: 4rem;
+}
+.sobre{
+  margin-top: 3rem;
+  font-size: 50px;
 }
 
 .navbar {
@@ -33,13 +40,7 @@ body{
       color: rgb(138, 216, 190);
   }
 
-  .text{
-    font-family: 'Francois One', sans-serif;
-    font-size: 40px;
-    margin-top: 2rem;
-    color: white;
-  }
-  li,h2{
+  li,h2,h3{
     font-family: 'Francois One', sans-serif;
     color: #fff;
     list-style: none;
@@ -76,9 +77,10 @@ body{
       margin-top: 1rem;
       font-family: 'Didact Gothic', sans-serif;
       color: white;
-      font-size: 18px;
+      font-size: 20px;
       border-radius: 20px;
       margin-top: 4rem;
+      padding: 10px;
   }
   /*skills*/
   h6{
@@ -92,9 +94,10 @@ body{
     padding: 6px;
     border-radius: 100%;
     background-image: linear-gradient(to top, #00c93d, #00a95e, #008769, #006562, #004349);
+    
   }
 .rounded-corners-gradient-borders {
-    margin: 24px;
+    margin: 50px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25), 0 0 24px rgba(0, 0, 0, 0.25);
     transition: all 0.25s ease-in-out;
 }
@@ -169,7 +172,7 @@ body{
 }
 
 .back {
-  background-image: linear-gradient(to top, #00c93d, #00a95e, #008769, #006562, #004349);
+  background: #60384F;
   transform: rotateY( 180deg );
     text-align: center;
     color: white;
@@ -208,7 +211,7 @@ input:checked + .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9rem;
+  margin-top: 15rem;
 }
 .all{
   display: flex;
